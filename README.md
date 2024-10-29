@@ -16,7 +16,9 @@ Answer Guide: An Answers.html page describes each vulnerability, providing mitig
 
 ## Technologies used
 HTML/CSS: For the front-end layout and styling.
+
 PHP: For server-side processing, session handling, and vulnerability demonstration.
+
 phpMyAdmin's MySQL: Database management to store user points.
 
 ## Setup Instructions
