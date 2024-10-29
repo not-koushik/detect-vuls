@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(32, 32, 32);
+            color: white;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #f1c40f;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .faq-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #444;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #3498db;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #aaa;
+        }
+
+        .back-btn {
+            color: #3498db;
+            font-size: 1.2em;
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background-color: #444;
+        }
+
+        /* Left-pointing arrow button at the top */
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: transparent;
+            color: #fff;
+            font-size: 2em;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .back-arrow:hover {
+            color: #f1c40f;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Back Arrow Button -->
+    <button class="back-arrow" onclick="window.location.href='home.html';">&#8592;</button>
+
+    <h1>FAQ (Frequently Asked Questions)</h1>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <h2>What is a Bug Bounty Program?</h2>
+            <p>A Bug Bounty Program is an initiative where organizations offer rewards (usually monetary) to individuals (security researchers, hackers, or developers) for identifying and reporting vulnerabilities in their software or web applications. This helps improve the security of their products by addressing issues before malicious actors can exploit them.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>How do I participate in a Bug Bounty Program?</h2>
+            <p>To participate in a Bug Bounty Program, you need to first register on a bug bounty platform like <a href="https://www.hackerone.com" target="_blank">HackerOne</a> or <a href="https://www.bountysource.com" target="_blank">Bountysource</a>, or directly through the organization's website if they run their own program. After registering, you can start testing applications for vulnerabilities, following the program's rules and scope. If you find a bug, you report it, and depending on the severity, you could earn a reward.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>What types of vulnerabilities are eligible for reporting?</h2>
+            <p>Common vulnerabilities that are eligible for reporting include:</p>
+            <ul>
+                <li>Cross-Site Scripting (XSS)</li>
+                <li>SQL Injection (SQLi)</li>
+                <li>Cross-Site Request Forgery (CSRF)</li>
+                <li>Server-Side Request Forgery (SSRF)</li>
+                <li>Authentication Issues (e.g., Broken Authentication)</li>
+                <li>Access Control Vulnerabilities</li>
+                <li>Insecure Direct Object References (IDOR)</li>
+                <li>XML External Entity (XXE) Injection</li>
+            </ul>
+            <p>It’s important to read the rules and guidelines of the specific bug bounty program you're participating in to know what types of vulnerabilities are in-scope and which are out-of-scope.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>How are vulnerabilities classified?</h2>
+            <p>Vulnerabilities are typically classified by their severity. The classifications include:</p>
+            <ul>
+                <li><strong>Critical:</strong> Vulnerabilities that allow an attacker to take full control of the application, database, or server. These are typically exploitable without any special privileges.</li>
+                <li><strong>High:</strong> Vulnerabilities that could allow an attacker to perform serious damage to the application or access sensitive data, but may require special privileges or conditions.</li>
+                <li><strong>Medium:</strong> Vulnerabilities that have some impact on security but may not directly compromise sensitive data or functionality.</li>
+                <li><strong>Low:</strong> Minor issues that don’t have a significant impact on the security or functionality of the application.</li>
+            </ul>
+            <p>Rewards vary depending on the severity of the vulnerability, with critical issues earning higher rewards.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>What is the reward for reporting bugs?</h2>
+            <p>Bug bounty rewards can vary significantly based on the severity of the vulnerability and the program's specific guidelines. The rewards can range from a few dollars to thousands of dollars. Generally, the more critical the vulnerability, the higher the reward. Some programs offer fixed rewards, while others may offer a range depending on the severity and impact of the vulnerability.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>Is there any legal risk in participating in Bug Bounty Programs?</h2>
+            <p>No, as long as you follow the rules and guidelines set by the program, there is no legal risk. It is crucial to ensure that you are operating within the scope defined by the organization. If you test vulnerabilities that are outside the scope or engage in unauthorized activities, you could face legal consequences. Always check the "Scope" and "Rules" section of the program to ensure you're participating legally.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>Can I participate in a Bug Bounty Program without being an expert?</h2>
+            <p>Absolutely! While expert security researchers are often involved in bug bounty programs, many programs are open to people with varying levels of experience. If you're new to bug hunting, there are plenty of resources available to learn, including training platforms, guides, and forums. You can start with less complex vulnerabilities and gradually build your skills over time. Everyone has to start somewhere!</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>What is the difference between a Bug Bounty Program and a Vulnerability Disclosure Program?</h2>
+            <p>A Bug Bounty Program offers rewards for finding and reporting vulnerabilities, while a Vulnerability Disclosure Program allows security researchers to report vulnerabilities without any financial reward. Many organizations run both types of programs, though Bug Bounty Programs tend to be more popular due to the incentive of rewards.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>How long does it take to get a response after submitting a report?</h2>
+            <p>The response time varies depending on the program. Some programs respond within a few days, while others may take several weeks to review and validate reports. The more critical the bug, the faster it is likely to be addressed. Programs typically offer a triage process, which includes the validation of the bug and determining the appropriate reward.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>What are some tips for being successful in a Bug Bounty Program?</h2>
+            <ul>
+                <li>Always read the program’s guidelines and scope before starting.</li>
+                <li>Start by looking for common vulnerabilities (e.g., XSS, SQLi, etc.) in popular applications.</li>
+                <li>Be patient—bug hunting takes time and practice.</li>
+                <li>Document everything carefully and provide a detailed report.</li>
+                <li>Be respectful and professional when communicating with the program admins.</li>
+                <li>Stay ethical—only test within the scope of the program.</li>
+            </ul>
+            <p>With persistence, you can find and report vulnerabilities that will make a real impact while earning rewards!</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>For more information, please visit our <a href="home.html">Home Page</a>.</p>
+    </div>
+
+</body>
+
+</html>

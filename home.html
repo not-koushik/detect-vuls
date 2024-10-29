@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💲BUG BOUNTY💲</title>
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <h1>BUG BOUNTY</h1>
+    </div>
+
+    <hr class='separator'>
+
+
+    <div class="account-section">
+        <img src="account.png" alt="Account Icon" class="account-icon">
+        <a href="account-details.php" class="account-link">My Account</a>
+
+        <img src="faq.png" alt="FAQ Icon" class="faq-icon"> 
+        <a href="faq.html" class="faq-link">FAQ</a>
+
+        <img src="perf.png" alt="FAQ Icon" class="faq-icon"> 
+        <a href="stats.html" class="faq-link">Stats</a>
+
+        <img src="logout.png" alt="FAQ Icon" class="faq-icon">
+        <a href="logout.php" class="faq-link">Logout</a>
+    </div>
+
+    <hr class="separator">
+
+    <h2>Today's bounties:</h2>
+
+    <div class="bounties-section">
+        <ul class="bounty-list">
+            <li><a href="bounty1_inj.php">‣ Find a small glitch and win big rewards!</a></li>
+            <li><a href="bounty2_xss.php">‣ Your eyes might catch what others missed.</a></li>
+            <li><a href="bounty4_fileup.php">‣ Uncover hidden vulnerabilities lurking around.</a></li>
+            <li><a href="bounty5_trav.php">‣ Earn some points for finding the tiniest issue!</a></li>
+            <li><a href="bounty6_csrf.php">‣ Today's top bug: Can you track it down?</a></li>
+        </ul>
+    </div>
+
+    <hr class="separator">
+
+    <div>
+        <img src="answer.png" alt="FAQ Icon" class="faq-icon">
+        <a href="Answers.html" class="faq-link" id="faq-link">Too tired to answer?</a>
+    </div>
+    
+    <script>
+        document.getElementById('faq-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("You will be redirected to the answers page. You cannot gain points for today's bounties if you view them.");
+            window.location.href = this.href;
+        });
+    </script>
+
+    <hr class="separator">
+
+    <div class="account-section">
+        <img src="mail.png" alt="Account Icon" class="account-icon">
+        <p class="mail-link">Got something to say? Mail us at at <i><u>koushikpanchadarla@gmail.com</u></i></p>
+    </div>
+</body>
+</html>

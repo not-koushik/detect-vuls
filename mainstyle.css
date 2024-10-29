@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(32,32,32);
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-size: 4em;
+    color: #f39c12;
+    text-align: center; /* Centering the "Bug Bounty" text */
+    width: 100%;        /* Ensuring the h1 takes full width */
+    margin: 0;
+}
+
+h2{
+    font-family: "Playfair Display", serif;
+    font-size: 2em;
+}
+
+.header-container {
+    display: flex;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    align-items: center;
+    justify-content: center; /* Center the header */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.account-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.account-icon, .faq-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.account-link, .faq-link {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.mail-link {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.account-link:hover, .faq-link:hover {
+    color: #075081;
+}
+
+.separator {
+    border: 1px solid #444;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.bounties-section h2 {
+    font-size: 2em;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.bounties-section {
+    width: 100%;
+    text-align: left;
+}
+
+.bounty-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.bounty-list li {
+    margin-bottom: 10px;
+}
+
+.bounty-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.bounty-list li a:hover {
+    color: #f39c12;
+}
+
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
